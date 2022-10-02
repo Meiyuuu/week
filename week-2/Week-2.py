@@ -53,15 +53,19 @@ func(-3)(2, 9) # 你補完的函式能印出 -3+(2*9) 的結果 15
 def maxProduct(nums):
    n=0
    max=0
-   max1=-999
+   max1=0
    x=int(len(nums))
    for i in range(x):
-      for j in range(x):
-         if nums[i]!=nums[j]:
-            n=nums[i]*nums[j] 
-            max=n  
-            if max>max1:
-               max1=max
+      for j in range(i+1,x):
+        if x<=2:
+          max1=nums[i]*nums[j]
+        else:
+          n=nums[i]*nums[j]
+          max=n 
+          if max>max1:
+            max1=max 
+       
+          
    print(max1)                           
 maxProduct([5, 20, 2, 6]) # 得到 120
 maxProduct([10, -20, 0, 3]) # 得到 30
