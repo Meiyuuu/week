@@ -64,19 +64,24 @@
                 func(5)(1, -5); 
                 func(-3)(2, 9); 
                
-                function maxProduct(nums){
+               function maxProduct(nums){
                     let n=0
                     let max=0
-                    let max1=-999
+                    let max1=0
                     let x=nums.length
                     for(let i=0;i<x;i++){
                         for(let j=0;j<x;j++){
                             if(nums[i]!=nums[j]){
+                                if(x==2){
+                                    max1=nums[i]*nums[j] 
+                                }
+                            else{n=nums[i]*nums[j] 
                                 n=nums[i]*nums[j] 
                                 max=n  
                                 if(max>max1){
                                     max1=max
                                 }
+                            }
                             }
                         }
                     }
