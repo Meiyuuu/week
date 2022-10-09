@@ -50,7 +50,6 @@
             })
             .then((data)=>{
                 let p=0;
-                let n=0;
                 let pt = new Array(10);
                 let image = new Array(10);
                 for(let i=1;i<=10;i++){
@@ -59,14 +58,13 @@
                 }
             
                 for(let i=0;i<10;i++){
-                    n++;
                     p=data.result.results[i]; 
                     let img=data.result.results[i];
                     let http=img.file.split("jpg")
                     console.log(data.result.results[2])
                     for(let i=1;i<=10;i++)
                     {
-                        if(n==i && i<3)
+                        if(i<3)
                         {
                             image[i].src  = http[0]+"jpg";
                             image[i].className ="scenery";
@@ -74,7 +72,7 @@
                             textNode=document.createTextNode(p["stitle"]);
                             pt[i].appendChild(textNode);  
                         }
-                        else if (n==i && i>2 && i<7)
+                        else if (i>2 && i<7)
                         {
                             image[i].src  = http[0]+"jpg";
                             image[i].className ="scenery1";
@@ -82,7 +80,7 @@
                             textNode=document.createTextNode(p["stitle"]);
                             pt[i].appendChild(textNode);
                         }
-                        else if(n==i && i>6 )
+                        else if(i>6 )
                         {
                             image[i].src  = http[0]+"jpg";
                             image[i].className ="scenery1";
