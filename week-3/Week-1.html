@@ -1,0 +1,186 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+        <link href="Week-1.css" rel="stylesheet" type="text/css">
+        <title>My Website</title>
+    </head>
+    <body leftmargin="0" topmargin="0">
+        <div class="menu-set">
+            <div class="left">My Website</div>
+            <div class="right">
+                <div class="item">Item 1</div>
+                <div class="item">Item 2</div>
+                <div class="item">Item 3</div>
+                <div class="item">Item 4</div>
+                <img class="menu" src="menu.png" />
+            </div>
+        </div>
+        <div class="title">
+            <div>Welcome to MyHome</div>
+        </div>
+        <div class="pro-set">
+            <div class="s1">
+                <div id="pt1" class="pro-set1"></div>          
+                <div id="pt2" class="pro-set2"></div>
+            </div>
+            <div class="s2">
+                <div class="photo-set">
+                    <div id="pt3" class="pt1"></div>   
+                    <div id="pt4" class="pt2"></div>
+                    <div id="pt5" class="pt3"></div>   
+                    <div id="pt6" class="pt4"></div>
+                </div>          
+            </div>
+            <div class="s2">
+                <div class="photo-set">
+                    <div id="pt7" class="pt1"></div>
+                    <div id="pt8" class="pt2"></div>
+                    <div id="pt9" class="pt3"> </div>   
+                    <div id="pt10" class="pt4"> </div>
+                    </div>
+                </div>          
+            </div>      
+        </div>
+        <script>
+            
+            fetch('https://padax.github.io/taipei-day-trip-resources/taipei-attractions-assignment.json')
+            .then((response) => { 
+                return response.json(); 
+            })
+            .then((data)=>{
+                let p=0;
+                let n=0;
+                let pt1=document.createElement('div');
+                let image = document.createElement('img');
+
+                let pt2=document.createElement('div');  
+                let image2 = document.createElement('img');
+
+                let pt3=document.createElement('div');
+                let image3 = document.createElement('img');
+
+                let pt4=document.createElement('div');
+                let image4 = document.createElement('img');
+
+                let pt5=document.createElement('div');
+                let image5 = document.createElement('img');
+
+                let pt6=document.createElement('div');
+                let image6 = document.createElement('img');
+
+                let pt7=document.createElement('div');
+                let image7 = document.createElement('img');
+
+                let pt8=document.createElement('div');
+                let image8 = document.createElement('img');
+
+                let pt9=document.createElement('div');
+                let image9 = document.createElement('img');
+
+                let pt10=document.createElement('div');
+                let image10 = document.createElement('img');
+                for(let i=0;i<10;i++){
+                    n++;
+                    p=data.result.results[i]; 
+                    let img=data.result.results[i];
+                    let http=img.file.split("jpg")
+                    console.log(data.result.results[2])
+                    if(n==1){
+                        image.src  = http[0]+"jpg";
+                        image.className ="scenery";
+                        pt1.className ="Promotion";
+                        textNode=document.createTextNode(p["stitle"]);
+                        pt1.appendChild(textNode);
+                        console.log(i)
+                    }
+                    if(n==2){
+                        image2.src = http[0]+"jpg";
+                        image2.className ="scenery";
+                        pt2.className ="Promotion";
+                        textNode=document.createTextNode(p["stitle"]);
+                        pt2.appendChild(textNode);
+                    } 
+                    if(n==3){
+                        image3.src = http[0]+"jpg";
+                        image3.className ="scenery1";
+                        pt3.className ="Title1";
+                        textNode=document.createTextNode(p["stitle"]);
+                        pt3.appendChild(textNode);
+                    }
+                    if(n==4){
+                        image4.src = http[0]+"jpg";
+                        image4.className ="scenery1";
+                        pt4.className ="Title1";
+                        textNode=document.createTextNode(p["stitle"]);
+                        pt4.appendChild(textNode);
+                    }  
+                    if(n==5){
+                        image5.src = http[0]+"jpg";
+                        image5.className ="scenery1";
+                        pt5.className ="Title1";
+                        textNode=document.createTextNode(p["stitle"]);
+                        pt5.appendChild(textNode);
+                    } 
+                    if(n==6){
+                        image6.src = http[0]+"jpg";
+                        image6.className ="scenery1";
+                        pt6.className ="Title1";
+                        textNode=document.createTextNode(p["stitle"]);
+                        pt6.appendChild(textNode);
+                    }   
+                    if(n==7){
+                        image7.src = http[0]+"jpg";
+                        image7.className ="scenery1";
+                        pt7.className ="Title2";
+                        textNode=document.createTextNode(p["stitle"]);
+                        pt7.appendChild(textNode);
+                    }   
+                    if(n==8){
+                        image8.src = http[0]+"jpg";
+                        image8.className ="scenery1";
+                        pt8.className ="Title2";
+                        textNode=document.createTextNode(p["stitle"]);
+                        pt8.appendChild(textNode);
+                    }   
+                    if(n==9){
+                        image9.src = http[0]+"jpg";
+                        image9.className ="scenery1";
+                        pt9.className ="Title2";
+                        textNode=document.createTextNode(p["stitle"]);
+                        pt9.appendChild(textNode);
+                    }   
+                    if(n==10){
+                        image10.src = http[0]+"jpg";
+                        image10.className ="scenery1";
+                        pt10.className ="Title2";
+                        textNode=document.createTextNode(p["stitle"]);
+                        pt10.appendChild(textNode);
+                    }                  
+                    document.getElementById('pt1').appendChild(image);
+                    document.getElementById('pt1').appendChild(pt1);
+                    document.getElementById('pt2').appendChild(image2);
+                    document.getElementById('pt2').appendChild(pt2);
+                    document.getElementById('pt3').appendChild(image3);
+                    document.getElementById('pt3').appendChild(pt3);
+                    document.getElementById('pt4').appendChild(image4);
+                    document.getElementById('pt4').appendChild(pt4);
+                    document.getElementById('pt5').appendChild(image5);
+                    document.getElementById('pt5').appendChild(pt5);
+                    document.getElementById('pt6').appendChild(image6);
+                    document.getElementById('pt6').appendChild(pt6);
+                    document.getElementById('pt7').appendChild(image7);
+                    document.getElementById('pt7').appendChild(pt7);
+                    document.getElementById('pt8').appendChild(image8);
+                    document.getElementById('pt8').appendChild(pt8);
+                    document.getElementById('pt9').appendChild(image9);
+                    document.getElementById('pt9').appendChild(pt9);
+                    document.getElementById('pt10').appendChild(image10);
+                    document.getElementById('pt10').appendChild(pt10);
+                   
+                }              
+            });
+            
+        </script>
+    </body>
+</html>
