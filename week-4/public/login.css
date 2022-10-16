@@ -1,0 +1,113 @@
+
+body{
+    background-color:#927157;
+}
+.menu-set{
+    display:flex; 
+    justify-content: center;
+    align-items: center;
+    background-color:#C5AB89;
+    padding-bottom:2px;
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    top: 0px;
+    left: 0px;
+    font-size: 30px;
+}
+
+.img-menu{
+    width: 40px;
+}
+.login-set{
+    display:flex;
+    justify-content:flex-end; /*水平對齊*/
+    align-items: center;
+    flex:auto;
+    font-size:20px;
+    margin-top:11px;
+    margin-right:5px;
+}
+.href-test{
+    display:flex;
+    text-decoration:none;
+    color: black;
+}
+.back_img{  
+    padding: 2px;
+    cursor: pointer; /*滑鼠放上變手指圖示*/
+}
+.back{  
+    margin-right: 3px;
+    cursor: pointer; /*滑鼠放上變手指圖示*/
+}
+
+
+.title1{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+    
+}
+
+.login-set1{
+    border: 5px solid #C5AB89;
+    border-radius: 20px; /*圓弧邊框*/
+    padding: 10px;
+}
+.login{
+    text-align: center;
+    font-size:120px;
+    padding-bottom: 15px;
+    color: #C5AB89;
+    /*margin-top:250px;*/
+    cursor:default;
+}
+.account-number{
+    
+    padding-right:30px;
+    padding-left:10px ;
+    padding-bottom: 10px;  
+    font-size:30px;
+    color:#C5AB89;
+}
+.password{
+   
+    padding-right:30px;
+    padding-left:10px ;
+    font-size:30px;
+    color:#C5AB89;
+}
+.input1{
+    border-radius: 20px; /*圓弧邊框*/
+    font-size:30px;
+    background-color:#7D6252; 
+    border: 2px solid #8D6B61;
+    outline: none;
+}
+.btn-login-div{
+    display: flex;
+    justify-content:center;
+    padding-top: 30px; 
+    padding-left:10px ;
+}
+.btn-login{
+    background-color:#7D6252;
+    border: 2px solid #B09279;
+    border-radius: 20px; /*圓弧邊框*/
+    font-size:25px;
+    text-align: center;
+}
+.bear-set{
+    display: flex;
+    height:160px;
+    width:100%;
+    justify-content:flex-end;
+    align-items: flex-end;
+}
+.bear-img{
+    width: 30%;
+   
+}
+
