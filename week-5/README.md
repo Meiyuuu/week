@@ -6,13 +6,14 @@ insert into member(name,username,password,follower_count) values('小蔡','test3
 insert into member(name,username,password,follower_count) values('小王','test4','14282',70);
 insert into member(name,username,password,follower_count) values('小山','test5','2873272',100);
 ![1](https://user-images.githubusercontent.com/106290448/197399620-33e3fd2e-1b8a-410c-a3e0-c4186a2598d6.png)
-![1](https://user-images.githubusercontent.com/106290448/197401640-fd3c42a1-d925-450b-a8f7-eb52ff43f1e5.png)
+![1](https://user-images.githubusercontent.com/106290448/197401874-7d80e0fb-7ad3-4bbc-be6d-9e716b9d0a51.png)
+
 
 
 2.select*from member;
 
 ![2](https://user-images.githubusercontent.com/106290448/197399641-54f75ae2-9a8e-482b-a1b1-50c429a57bf8.png)
-![2](https://user-images.githubusercontent.com/106290448/197401651-60f91ef5-cf66-4b7f-b16c-fbeb9e978a60.png)
+![2](https://user-images.githubusercontent.com/106290448/197401882-1330fe9f-20df-4de1-9fbb-27d7303ad463.png)
 
 
 3.select*from member order by time desc;
