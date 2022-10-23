@@ -6,7 +6,7 @@ insert into member(name,username,password,follower_count) values('小蔡','test3
 insert into member(name,username,password,follower_count) values('小王','test4','14282',70);
 insert into member(name,username,password,follower_count) values('小山','test5','2873272',100);
 ![1](https://user-images.githubusercontent.com/106290448/197399620-33e3fd2e-1b8a-410c-a3e0-c4186a2598d6.png)
-![1](https://user-images.githubusercontent.com/106290448/197401874-7d80e0fb-7ad3-4bbc-be6d-9e716b9d0a51.png)
+![1](https://user-images.githubusercontent.com/106290448/197401933-dd762718-137b-4ad2-8019-b4bdd8ad5da0.png)
 
 
 
