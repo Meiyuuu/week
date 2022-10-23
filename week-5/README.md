@@ -1,4 +1,5 @@
 要求三:
+
 1.insert into member(name,username,password,follower_count) values('小美','test','test',5);
 insert into member(name,username,password,follower_count) values('小林','test2','12524',10);
 insert into member(name,username,password,follower_count) values('小蔡','test3','252383',2);
