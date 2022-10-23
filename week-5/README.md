@@ -30,6 +30,7 @@ update member set name='test2' where username='test';
 ![7](https://user-images.githubusercontent.com/106290448/197399729-f6c9700f-de7f-4e00-9655-e43c29306dbb.png)
 
 要求四:
+
 1.select count( * ) as "總共有幾筆資料(幾位會員)" from member;
 ![8](https://user-images.githubusercontent.com/106290448/197399738-1b501a7d-9cef-493f-abf1-dbe13ca29da5.png)
 
