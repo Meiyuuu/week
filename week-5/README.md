@@ -7,15 +7,19 @@ insert into member(name,username,password,follower_count) values('小山','test5
 ![1](https://user-images.githubusercontent.com/106290448/197399620-33e3fd2e-1b8a-410c-a3e0-c4186a2598d6.png)
 
 2.select*from member;
+
 ![2](https://user-images.githubusercontent.com/106290448/197399641-54f75ae2-9a8e-482b-a1b1-50c429a57bf8.png)
 
 3.select*from member order by time desc;
+
 ![3](https://user-images.githubusercontent.com/106290448/197399691-5fdb6fe3-d3af-4f4a-804b-4d8715b2a462.png)
 
 4.select*from member order by time desc limit 1,3;
+
 ![4](https://user-images.githubusercontent.com/106290448/197399697-ba157949-0821-4e0b-9f13-03a9a135e758.png)
 
 5.select*from member where username="test";
+
 ![5](https://user-images.githubusercontent.com/106290448/197399705-300840f2-c73f-4ace-8f16-292756615058.png)
 
 6.select*from member where username="test" and password="test";
