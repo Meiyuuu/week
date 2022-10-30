@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+        <title>YU網站</title>
+        <link rel="icon" type="image/x-icon" href="girl.png">
+        <link href="login.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <div class="menu-set">
+            <div>歡迎光臨，請輸入帳號密碼</div>  
+        </div>
+        <div class="hr"></div>
+        <div class="title1" id="title1" onclick="cancel_menu();">
+            <div style="height:180px;width:100%"></div>
+            <div class="signup-set1">
+                <div class="signup">註冊帳號</div>
+                <form action="/signup" method="POST" >
+                    <div class="account-number">暱稱:
+                        <input type="text" class="input1" name="nickname" onmouseover="inputover(this)" onmouseout="inputsout(this)" /> 
+                    </div>
+                    <div class="account-number">帳號:
+                        <input type="text" class="input1" name="email" onmouseover="inputover(this)" onmouseout="inputsout(this)" /> 
+                    </div>
+                    <div class="password">密碼:        
+                        <input type="password" class="input1" name="password2" onmouseover="inputover(this)" onmouseout="inputsout(this)" />        
+                    </div>
+                    <div class="btn-login-div">
+                        <button class="btn-signup" onmouseover="inputover(this)" onmouseout="inputsout(this)">註冊</button>
+                    </div>
+                </form>
+            </div>
+            <div style="marain right=50px;"></div>
+            <div class="login-set1">
+                <div class="login">登入系統</div>
+                <form action="/signin" method="POST" >
+                    <div class="account-number1">帳號:
+                        <input type="text" class="input1" name="account1" onmouseover="inputover(this)" onmouseout="inputsout(this)" /> 
+                    </div>
+                    <div class="password">密碼:        
+                        <input type="password" class="input1" name="password1" onmouseover="inputover(this)" onmouseout="inputsout(this)" />        
+                    </div>
+                    <div class="btn-login-div">
+                        <button class="btn-login" onmouseover="inputover(this)" onmouseout="inputsout(this)">登入</button>
+                    </div>
+                </form>      
+            </div>
+        </div>                  
+        <script>
+            let n=0;
+            let cancel_menu=()=>{
+                let elem=document.querySelector("#tableset");
+                n=0;
+                elem.style.display="none";
+            }
+            let menuclick=()=>{
+                let elem=document.querySelector("#tableset");
+                n++;
+                if(n%2==0){
+                    elem.style.display="none";
+                }
+                else{
+                    elem.style.display="block";
+                }
+            }
+            let inputover=(elem)=>{
+                elem.style.backgroundColor="#8D6B61";
+            }
+            let inputsout=(elem)=>{
+                elem.style.backgroundColor="#7D6252";
+            }
+        </script>
+        <script>
+            let mapover=(elem)=>{
+                elem.style.backgroundColor="#D5AB89";
+            }
+            let mapsout=(elem)=>{         
+                elem.style.backgroundColor="#C5AB89";
+            }
+        </script>
+    </body>
+</html>
