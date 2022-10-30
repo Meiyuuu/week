@@ -3,7 +3,7 @@ import mysql.connector
 mydb = mysql.connector.connect(
 host="localhost",
 user="root",
-password="12345678",
+password="",
 database="mydatabase")
 mycursor = mydb.cursor()
 mycursor.execute("CREATE TABLE member2 (id BIGINT AUTO_INCREMENT  PRIMARY KEY NOT NULL , name VARCHAR(255) NOT NULL, username VARCHAR(255) NOT NULL,password VARCHAR(255) NOT NULL)")
